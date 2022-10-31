@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icon css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Resturant</title>
+</head>
+
+<body>
+    <div class="d-flex vh-100 Nav position-fixed align-items-center">
+        <nav class="navBox vh-100 row col">
+            <div class="flex-shrink-0  p-3 bg-white" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                    <svg class="bi me-2" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-5 fw-semibold">Yummy</span>
+                </a>
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button id="SearchBtn" class=" btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse" aria-expanded="true">
+                            Search
+                        </button>
+    
+                    </li>
+                    <li class="mb-1">
+                        <button id="CategoryBtn" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            Category
+                        </button>
+    
+                    </li>
+                    <li class="mb-1">
+                        <button id="AreaBtn" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse" aria-expanded="false">
+                            Area
+                        </button>
+    
+                    </li>
+                    <li class="mb-1">
+                        <button id="IngredientsBtn" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse" aria-expanded="false">
+                            Ingredients
+                        </button>
+    
+                    </li>
+                    <li class="mb-1">
+                        <button id="contact" class=" btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse" aria-expanded="true">
+                            Contac Us
+                        </button>
+    
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse" aria-expanded="false">
+                            Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">New...</a></li>
+                                <li><a href="#" class="link-dark rounded">Profile</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+    
+    
+    
+    
+        </nav>
+        <div class="gear vh-100 d-flex align-items-center bg-danger rounded text-white">
+            <i class="fa p-3 fa-cog"></i>
+        </div>
+    </div>
+    <!-- home -->
+    <section class="container">
+        <div class="row">
+            
+        </div>
+    </section>
+    <!--end home -->
+
+    
+    <!-- search section -->
+    <section class="container" id="searchRow"> 
+            <div class="row">
+                <div class="mb-3 col d-flex ">
+
+                    <input type="search" placeholder="Name" class="form-control mx-2" id="exampleInputsearch1" aria-describedby="searchHelp">
+                    <input type="search" placeholder="Meal first letter" class="form-control mx-2" id="exampleInputsearch1">
+                </div>
+                <div class="mb-3 w-100 form-check">
+                    <button class="btn btn-info text-white">Search</button>
+                </div>
+
+
+
+
+
+
+            </div>
+    </section>
+    <!-- end search section -->
+
+
+
+
+
+    <!-- category -->
+    <section class="container m-auto">
+        <div class="row " id="categoryRow">
+            
+            
+
+        </div>
+        <div class="d-flex m-2 p-2 g-3 flex-wrap" id="mealsRow"></div>
+        
+
+    </section>
+    <!-- end category -->
+
+    <!-- area -->
+    <section class="container">
+        <div class="row" id="areaRow">
+
+        </div>
+    </section>
+
+    <!-- end area -->
+
+
+    <!-- Ingredients -->
+    <section class="container">
+        <div class="row" id="IngredientsRow">
+
+
+            
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- end Ingredients -->
+
+
+    <!-- conact -->
+    <div class="container" id="inputs">
+        <h2 class="text-center m-5">ContacUs...</h2>
+        <div class="row" >
+            <form class="needs-validation  ">
+                <div class=" d-flex align-items-center justify-content-center  ">
+                  <input required type="text" placeholder="enter your name" class=" m-2 shadow form-control" aria-describedby="textHelp">
+                  <input required type="email" placeholder="enter your email" class=" m-2 shadow form-control"  aria-describedby="textHelp">
+                </div>
+                <div class=" d-flex align-items-center justify-content-center ">
+                    <input required type="tel" placeholder="enter your phone" class=" m-2 shadow form-control" aria-describedby="textHelp">
+                    <input required type="number" placeholder="enter your age" class=" m-2 shadow form-control"  aria-describedby="textHelp">
+                  </div>
+                  <div class=" d-flex align-items-center justify-content-center ">
+                    <input required type="password" placeholder="enter your password" class=" m-2 shadow form-control" aria-describedby="textHelp">
+                    <input required type="password" placeholder="enter your repassword" class=" m-2 shadow form-control"  aria-describedby="textHelp">
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+    <!-- end conact -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>

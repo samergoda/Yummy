@@ -1,0 +1,46 @@
+#searchRow {
+    display: none;  
+}
+#categoryRow{
+    display: none;
+}
+#areaRow{
+ display: none;
+}
+#IngredientsRow{ 
+    display: none;
+}
+.Nav{
+    z-index: 99;
+}
+.gear i {
+    cursor: pointer;
+}
+.navBox {
+    display: none;
+}
+#inputs{
+    display:none;
+}
+.item {
+    position: relative;
+}
+
+.textHover {
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+.textHover{
+    transition: all .5s;
+}
+ .item:hover .textHover {
+    opacity: 1;
+ }
